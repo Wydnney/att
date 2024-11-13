@@ -1,0 +1,558 @@
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ambas são sans-serif */
+@font-face {
+    font-family: 'bebas';
+    src: url('/travly-front/FONTS/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Ambas são sans-serif */
+@font-face {
+    font-family: 'league';
+    src: url('/travly-front/FONTS/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --purple: #9775C9; /* roxo principal */
+    --light_purple: #CEADFF; /* roxo textos */
+    --soft_pink: #E0CCFF; /* roxo leve */
+    --white: #FFFFFF;
+    --gray: #565B69; /* cinza caixinhas */
+    --outro_gray: #303741; /* cinza caixinhas escuras */
+    --medium_gray: #25292F; /* background */
+    --dark: #14181C;
+    --dark_purple: #523A76;
+    --text: 'league', arial, sans-serif; /* textos */
+    --title: 'bebas', arial, sans-serif; /* títulos */
+}
+
+/* BARRA DE ROLAGEM */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do fundo da barra de rolagem */
+    border-radius: 10px; /* Arredondamento do fundo */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--purple); /* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredondamento da barra */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark_purple); /* Cor da barra de rolagem ao passar o mouse */
+}
+
+
+body {
+    background: #25292f1e url(/travly-front/IMG/riodejaneiro.jpg) center top no-repeat fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+
+}
+
+.background {
+    display: flex;
+    background-color: #25292F;
+    margin-top: 250px;
+    width: auto;
+}
+
+main {
+    box-shadow: 0px 0px 10px #14181c69;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/* MENU ESQUERDA */
+
+.menu {
+    padding-left: 70px;
+}
+
+.bandeira {
+    width: 300px;
+    border: 20px solid var(--medium_gray);
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px #14181c69;
+}
+
+.bloco-bandeira {
+    margin-top: -190px;
+}
+
+h1 {
+    font-size: 90px;
+    color: var(--white);
+    font-family: var(--title);
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+
+.requisitos-para {
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "league", sans-serif;
+}
+
+.lista-doença {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 10;
+    font-family: "league", sans-serif;
+    font-style: normal;
+
+}
+
+
+.requisitos {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    font-family: "bebas", sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.corretamente {
+    margin-left: -20px;
+    font-family: "bebas", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.paragrafoCurto {
+    font-size: 35px;
+    font-family: "league", sans-serif;
+    color: #FFFFFF;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.paragrafoGrande {
+    font-size: 20px;
+    font-family: "league", sans-serif;
+    color: #FFFFFF;
+    font-weight: normal;
+    margin-top: 7px;
+    margin-bottom: 14px;
+}
+
+.dica {
+    background-color: var(--purple);
+    border-radius: 33px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "league", sans-serif;
+    padding: 20px;
+}
+
+.dica2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: -10px;
+    font-family: "league", sans-serif;
+}
+
+.alerta {
+    background-color: #FFE692;
+    border-radius: 33px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "league", sans-serif;
+    padding: 20px;
+    color: #14181C;
+}
+
+.alerta2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: -10px;
+    font-family: "league", sans-serif;
+    color: #AB1C1C;
+    font-weight: bold;
+}
+
+.curtidas {
+    background-color: #565B69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    width: 150px;
+    margin: 20px;
+}
+
+.curtidas p {
+    font-family: var(--text);
+    color: white;
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+#img-favoritos {
+    font-size: 40px;
+    color: var(--purple);
+}
+
+#img-curtidas {
+    font-size: 40px;
+    color: #FFD484;
+}
+
+/* animação favoritar */
+/* .favoritar i:hover {
+    transform: scale(1.15);
+    color: var(--light_purple) !important;
+    transition: 0.4s ;
+}
+.favoritar i {
+    transition: transform 0.3s ease;
+}
+.favoritar h3 {
+    transition: opacity 0.3s ease;
+}
+.favoritado {
+    transform: scale(1.15);
+}
+.bxs-heart {
+    color: var(--light_purple) !important;
+    transition: 0.4s ease !important;
+} */
+
+.menuzinho {
+    background-color: var(--gray);
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 25px;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.menuzinho li {
+    font-family: var(--title);
+    font-size: 37px;
+    color: var(--white);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.menuzinho li:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.menuzinho a:hover {
+    color: var(--light_purple);
+    transition: 0.4s;
+}
+
+
+
+#selected {
+    color: var(--light_purple);
+}
+
+.menuzinho hr {
+    width: 100%;
+    border: 1px solid #76777a;
+    margin: 10px 0px;
+}
+
+/* CONTEUDO MEIO */
+
+.conteudo {
+    width: 100vw;
+}
+
+.caixa-conteudo {
+    background-color: var(--gray);
+    width: 95%;
+    border-radius: 25px;
+    padding: 50px 40px;
+}
+
+.infos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px 30px;
+}
+
+.div-tabela {
+    width: 50%;
+    background: linear-gradient(to right, var(--purple) 40%, var(--outro_gray) 40%);
+    border-radius: 25px;
+    padding: 0px 20px;
+    box-shadow: 0px 0px 10px #14181c69;
+    margin-bottom: 20px;
+}
+
+.tabela-infos {
+    border-collapse: collapse;
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 23px;
+    border-radius: 25px;
+    height: 200px;
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    border-bottom: 1px solid #d8d8da;
+    font-weight: 400;
+    width: 45%;
+}
+
+td {
+    border-bottom: 1px solid #d8d8da;
+}
+
+.last {
+    border-bottom: none;
+}
+
+#tabela-infos2 {
+    height: 150px;
+}
+
+.numeros {
+    background-color: var(--outro_gray);
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 20px;
+    line-height: 25px;
+    width: 38%;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #14181c69;
+}
+
+h4 {
+    color: var(--light_purple);
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.numeros div {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 30px;
+}
+
+.numeros i {
+    font-size: 60px;
+}
+
+.moeda {
+    background-color: var(--outro_gray);
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 20px;
+    line-height: 25px;
+    width: 38%;
+    height: 150px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #14181c69;
+    margin-top: -40px;
+}
+
+.conteudo hr {
+    width: 100%;
+    border: 1px solid #9c9da0;
+    margin: 20px 0px;
+}
+
+.main-conteudo h1 {
+    background-color: var(--purple);
+    font-size: 40px;
+    width: 99%;
+    border-radius: 100px;
+    margin: -30px 0px 20px 0px;
+}
+
+.main-conteudo p {
+    color: var(--white);
+    padding: 10px;
+    font-family: var(--text);
+    font-size: 24px;
+}
+
+/* MENU DIREITA */
+
+/* .favoritar {
+    background-color: var(--gray);
+    display: flex;
+    padding: 15px 20px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 230px;
+}
+
+#img-favoritar {
+    font-size: 50px;
+    color: var(--white);
+} */
+
+.outro h3 {
+    color: var(--white);
+    font-family: var(--title);
+    font-weight: 200;
+
+    font-size: 35px;
+}
+
+/* animação favoritar */
+/* .favoritar i:hover {
+    transform: scale(1.15);
+    color: var(--light_purple) !important;
+    transition: 0.4s ;
+}
+.favoritar i {
+    transition: transform 0.3s ease;
+}
+.favoritar h3 {
+    transition: opacity 0.3s ease;
+}
+.favoritado {
+    transform: scale(1.15);
+}
+.bxs-heart {
+    color: var(--light_purple) !important;
+    transition: 0.4s ease !important;
+} */
+
+/* comentar */
+.avaliar a {
+    text-decoration: underline;
+}
+
+
+.avaliar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    border-radius: 25px;
+    text-align: center;
+    gap: 10px;
+    width: 230px;
+    margin-top: 20px;
+    padding: 0px 20px 25px 20px;
+}
+
+span {
+    background-color: var(--purple);
+    width: 230px;
+    border-radius: 25px 25px 0px 0px;
+    margin: 0px -20px 7px -20px;
+    padding: 5px 20px;
+
+}
+
+/* estrelas */
+.estrelas-avaliar li {
+    display: inline;
+    font-size: 42px;
+    margin: 0px -3px;
+    color: var(--white);
+}
+
+/* animação avaliar */
+.estrelas-avaliar li i:hover {
+    color: var(--light_purple);
+    transform: scale(1.3);
+}
+.estrelas-avaliar li i {
+    transition: transform 0.2s ease-in-out;
+}
+.estrelas-avaliar li i.clicked {
+    transform: scale(1.3); /* Aumenta o tamanho da estrela */
+}
+.bxs-star {
+    color: var(--light_purple); /* Cor da estrela preenchida */
+}
+
+
+a {
+    color: var(--soft_pink);
+    font-family: var(--text);
+    font-size: 20px;
+}
+
+.ver-avaliacoes {
+    background-color: var(--gray);
+    width: 230px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.ver-avaliacoes a {
+    text-decoration: none;
+}
+
+.outro a {
+    color: var(--soft_pink);
+    font-family: var(--text);
+    font-size: 20px;
+}
+
+/* MAPA */
+
+/* caixinha */
+.mapa {
+    background-color: var(--gray);
+    border-radius: 25px;
+    height: 240px;
+    width: 240px;
+    padding: 10px;
+}
+
+/* iframe */
+.map {
+    border-radius: 25px;
+}

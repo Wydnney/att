@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travly</title> <!-- Alterar caso seja necessário -->
+    <link rel="stylesheet" href="turism.css">
+    <link rel="shortcut icon" href="/travly-front/IMG/Logo01.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <script>
+        fetch('/travly-front/components/navbar/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <main>
+        <div class="background">
+            <section class="menu">
+                <div class="bloco-bandeira">
+                    <img class="bandeira" src="/travly-front/IMG/bandeira-nacional-brasil.jpg" alt="">
+                    <h1>BRASIL</h1>
+                </div>
+                <div class="curtidas">
+                    <div class="avaliacao">
+                        <i class='bx bxs-star' id="img-curtidas"></i>
+                        <p>8k</p>
+                    </div>
+                    <div class="favoritos">
+                        <i class='bx bxs-heart' id="img-favoritos"></i>
+
+                        <p>34k</p>
+                    </div>
+                </div>
+                <div>
+                    <ul class="menuzinho">
+                        <a href="../main-brazil/pagebrazil.html">
+                            <li>SOBRE</li>
+                        </a>
+                        <hr>
+                        <a href="../tourism/turism.html">
+                            <li id="selected">TURISMO E IMIGRAÇÃO</li>
+                        </a>
+                        <hr>
+                        <a href="../laws-brazil/page-laws.html">
+                            <li>LEIS</li>
+                        </a>
+                        <hr>
+                        <a href="../pontos-turisticos/pontos-brazil.html">
+                            <li>PONTOS TURÍSTICOS</li>
+                        </a>
+                        <hr>
+                        <a href="../events-brazil/events.html">
+                            <li>EVENTOS</li>
+                        </a>
+                        <hr>
+                        <a href="../culture/culture-brazil.html">
+                            <li>CULTURA</li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
+            <section class="conteudo">
+                <div class="caixa-conteudo">
+                    <article class="main-conteudo">
+                        <h1>Turismo e imigracao</h1>
+                        <h2 class="requisitos">Requisitos para entrar no país<h2>
+                    </article>
+                    <div class="requisitos-para">
+                        <p>Os requisitos para a entrada no Brasil são poucos: basta somente do visto (quando
+                            necessário), da cédula de identidade e do passaporte. Porém o Ministério da Saúde também
+                            indica o esquema vacinal completo, contendo as vacinas contra:
+                        </p>
+                        <br>
+                        <ul class="lista-doença">
+                            <li>• Febre amarela</li>
+                            <li>• Sarampo</li>
+                            <li>• Difteria</li>
+                            <li>• Tétano</li>
+                            <li>• Poliomelite</li>
+                            <li>• Rubéola</li>
+                            <li>• Covid, ou teste se nao tiver sistema vacinal completo</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div>
+                        <h2 class="corretamente">É preciso apresentar corretamente<h2>
+                                <p class="paragrafoCurto">Passaporte válido</p>
+                                <p class="paragrafoGrande">O passaporte precisa estar válido por pelo menos seis meses
+                                    além da data
+                                    planejada para a saída do Brasil.</p>
+                                <p class="paragrafoGrande">Fotografias</p>
+                                <p class="paragrafoGrande">É corriqueiro a necessidade de duas fotografias recentes, em
+                                    formato
+                                    padrão, com fundo branco e sem acessórios que possam atrapalhar ou interferir, como
+                                    chapéus e óculos escuros.</p>
+                                <p class="paragrafoGrande">Comprovante de pagamento da taxa de visto</p>
+                                <p class="paragrafoGrande">É necessário pagar a taxa de visto, cujo valor pode variar
+                                    dependendo da
+                                    nacionalidade do requerente e do tipo de visto solicitado.</p>
+                                <p class="paragrafoGrande">Comprovante de residência</p>
+                                <p class="paragrafoGrande">Alguns tipos de visto podem exigir a apresentação do
+                                    comprovante de
+                                    residência do seu país de origem. O comprovante pode ser um contrato de aluguel, uma
+                                    conta de serviços públicos ou outro documento oficial que comprove a veracidade do
+                                    endereço do requerente.</p>
+                                <p class="paragrafoGrande">Documentos específicos por tipo de visto</p>
+                                <p class="paragrafoGrande">Dependendo do tipo de visto solicitado, podem ser exigidos
+                                    documentos
+                                    adicionais. Por exemplo, para o tipo de visto de negócios, é comum apresentar uma
+                                    carta de convite da empresa brasileira, documentos relacionados a algum evento da
+                                    empresa, ou de reuniões de negócio, comprovantes de atividades comerciais, entre
+                                    outros.</p>
+                                <h1 class="dica">
+                                    <p class="dica2">Dica:</p> <br> Para evitar atrasos e estresse na obtenção do seu
+                                    visto, é de suma importância preparar e enviar todos os documentos com antecedência,
+                                    seguindo as instruções fornecidas pelo seu consulado ou embaixada.
+                                </h1>
+                    </div>
+                    <br>
+                    <hr>
+                    <h2 class="requisitos">Tipos de visto:<h2>
+                            <p class="paragrafoGrande">O tipo de visto irá depender de qual a finalidade de sua viagem
+                                ao Brasil. A
+                                validade de cada visto varia de acordo com a categoria e de acordos governamentais.</p>
+                            <p class="paragrafoGrande">Visto Eletrônico (e-Visa):</p>
+                            <p class="paragrafoGrande">Uma opção para facilitar os que desejam visitar o Brasil e que
+                                sejam nacionais
+                                do: Canadá, Estados Unidos da América e Austrália é a opção de tirar o visto por meio
+                                digital por meio da plataforma oficial (https://brazil.vfsevisa.com)</p>
+                            <p class="paragrafoGrande">Visto de Visita (VIVIS)</p>
+                            <p class="paragrafoGrande">O visto de visita será concedido ao nacional de outro país que
+                                viaje ao Brasil
+                                para estadas de até noventa dias, sem qualquer intuito imigratório ou de exercício de
+                                atividade remunerada, salvo a título de diária, ajuda de custo, cachê, pró-labore ou
+                                outras despesas com a viagem. O visto de visita poderá ser concedido para viagens com
+                                fins de turismo, negócios, trânsito, realização de atividades artísticas ou desportivas,
+                                estudo, trabalho voluntário, ou para participação em conferências, seminários,
+                                congressos ou reuniões, entre outras atividades, - desde que não haja recebimento de
+                                remuneração no Brasil e a estada não seja superior a noventa dias.</p>
+                            <p class="paragrafoGrande">Visto Permanente</p>
+                            <p class="paragrafoGrande">Para um estrangeiro conseguir morar permanentemente no Brasil, é
+                                preciso
+                                comprovar algum tipo de ligação com o país, como por exemplo, ter cônjuge de
+                                nacionalidade brasileira, ser filho de brasileiro, possuir uma união estável com
+                                brasileiro ou investir em negócios no Brasil.</p>
+                            <br>
+                            <hr>
+                            <div>
+                                <h2 class="requisitos">Permanência com base no casamento com cônjuge brasileiro:</h2>
+                                <p class="paragrafoGrande">O Estatuto do Estrangeiro define que o estrangeiro que for
+                                    casado com um
+                                    brasileiro pode solicitar pela sua permanência definitiva no Brasil. É necessário,
+                                    no entanto, que o estrangeiro esteja casado de fato e de direito com um brasileiro.
+                                    O que significa que, além de ser um casamento válido, o casal precisa viver junto de
+                                    forma efetiva. <br> <br>É comum que o casal receba a visita de agentes da Polícia
+                                    Federal dentro de sua casa para que este requisito seja validado</p>
+                                <ul class="lista-doença">
+                                    <li>- Documentos que devem ser apresentados:</li>
+                                    <li>• Formulário preenchido e assinado (encontrado no site do Ministério da Justiça
+                                        ou em uma Unidade da Polícia Federal);</li>
+                                    <li>• Comprovante do pagamento da taxa respectiva;</li>
+                                    <li>• Declaração de que não cometeu crimes ou não foi processado tanto no Brasil
+                                        como no exterior;</li>
+                                    <li>• Declaração de que o casal não se encontram separados de fato ou de direito,
+                                        assinada pelos requerentes, e com reconhecimento de firma;</li>
+                                    <li>• Cópia autenticada e completa do passaporte;</li>
+                                    <li>• Cópia da Certidão de Casamento brasileira;</li>
+                                    <li>• Cópia autenticada da cédula de identidade brasileira do cônjuge;</li>
+                                </ul>
+                                <br>
+                                <p class="paragrafoGrande">Caso o casamento tenha sido celebrado fora do Brasil, é
+                                    necessário que
+                                    seja então registrado ou transcrito no 1º Ofício de Registro Civil do Distrito
+                                    Federal ou do domicílio do casal.</p>
+                                <h2 class="requisitos">Permanência com base na união estável com brasileiro:</h2>
+                                <p class="paragrafoGrande">De acordo com o Conselho Nacional de Imigração, a permanência
+                                    definitiva
+                                    no Brasil também pode ser solicitada por pessoas que vivam em união estável,
+                                    independente de sexo. A comprovação da união estável se dará por meio da
+                                    apresentação do atestado de união estável emitido pelo órgão governamental do país
+                                    de origem do requerente, ou, através de um documento de união estável que pode ser
+                                    emitido por juízo competente no Brasil ou de autoridade correspondente no exterior.
+                                </p>
+                                <ul class="lista-doença">
+                                    <li>- Caso o casal não possua nenhum dos dois documentos acima, a comprovação da
+                                        união estável poderá ser feita por meio de apresentação das seguintes opções;
+                                    </li>
+                                    <li>• certidão ou documento similar emitido por autoridade de registro civil
+                                        nacional, ou equivalente estrangeiro;</li>
+                                    <li>• declaração, sob as penas da lei, de duas testemunhas sobre a existência da
+                                        união estável</li>
+                                    <li>• no mínimo, dois dos seguintes documentos:</li>
+                                    <li>• (A) comprovação de dependência emitida por autoridade fiscal ou órgão
+                                        correspondente à Receita Federal;</li>
+                                    <li>• (B) certidão de casamento religioso (tempo mínimo de um ano);</li>
+                                    <li>• (C) disposições testamentárias que comprovem o vínculo;</li>
+                                    <li>• (D) apólice de seguro de vida na qual conste um dos interessados como
+                                        instituidor do seguro e o outro como beneficiário;</li>
+                                    <li>• (E) escritura de compra e venda, registrada no Registro de Propriedade de
+                                        Imóveis, em que constem os interessados como proprietários, ou contrato de
+                                        locação de imóvel em que figurem como locatários;</li>
+                                    <li>• (F) conta bancária conjunta (tempo mínimo de um ano).</li>
+                                </ul>
+                                <h2 class="requisitos">Permanência com base em negócios ou emprego em território
+                                    brasileiro:</h2>
+                                <p class="paragrafoGrande">Aqueles que são: profissionais qualificados e contratados por
+                                    instituição
+                                    instalada no Brasil, profissional com capacitação reconhecida por órgão da área
+                                    pertinente, ou que estão estabelecidos no Brasil com objetivo de abrir um negócio
+                                    (de investimento a partir de R$150.000,00), também podem solicitar a permanência no
+                                    Brasil.</p>
+                                <h1 class="alerta">
+                                    <p class="alerta2">ATENÇÃO!!!</p> <br> Lembre-se que se ausentar por mais de dois
+                                    anos do território brasileiro leva a perda automática do visto permanente e da
+                                    validade da Carteira de Residente Permanente!
+                                    O interessado pode acompanhar o seu processo pela internet, por telefone pelo
+                                    seguinte número: +55 61 2025-3232, ou por e-mail estrangeiros@mj.gov.br.
+                                </h1>
+                                <br>
+                                <p class="paragrafoGrande">• Solicitar o visto</p>
+                                <p class="paragrafoGrande">Para solicitar o visto, o estrangeiro deve apresentar o
+                                    Formulário de
+                                    Pedido de Visto preenchido corretamente. Para solicitar o Formulário de Pedido de
+                                    Visto, acesse: Sistema Consular Integrado</p>
+                                <p class="paragrafoGrande">• Concessão do Visto Brasileiro:</p>
+                                <p class="paragrafoGrande">O órgão responsável pela concessão de vistos no Brasil é o
+                                    Itamaraty, a
+                                    concessão ocorre por meio de Consulados Gerais, Consulados, Vice Consulados e das
+                                    Embaixadas do Brasil em países exteriores. Para saber onde encontrar um destes
+                                    Consulados ou Embaixadas oficiais em seu país, acesse: <a
+                                        href="https://www.gov.br/mre/pt-br/assuntos/portal-consular/reparticoes-consulares-do-brasil/reparticoes-consulares-do-brasil"
+                                        target="_blank">Repartições Consulares do Brasil — Ministério das Relações
+                                        Exteriores</a></p>
+                                <p class="paragrafoGrande">• Países Que Não Exigem Visto Para Viajar ao Brasil:</p>
+                                <p class="paragrafoGrande">O Brasil é um país que adota a concessão de vistos usando
+                                    como base o
+                                    princípio da reciprocidade, o que significa que, as nações que exigem vistos dos
+                                    cidadãos brasileiros também precisarão de vistos para que seus nacionais viajem ao
+                                    Brasil.</p>
+                                <p class="paragrafoGrande">Entretanto, alguns países apresentam acordos bilaterais com o
+                                    Brasil e
+                                    estão ISENTOS da necessidade de apresentação de um visto, entre eles:</p>
+                                <p class="paragrafoGrande">✴PAÍSES DO MERCOSUL: Argentina, Paraguai, Uruguai e
+                                    Venezuela(suspensa)✴OUTROS: França, Hong Kong, Irlanda, Itália, Peru, África do Sul,
+                                    Reino Unido, e muitos mais.</p>
+                                <p class="paragrafoGrande">Para saber se o seu país precisa de visto ou não para viajar
+                                    ao Brasil,
+                                    acesse <a
+                                        href="https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/quadro-geral-de-regime-de-vistos-para-entrada-de-estrangeiros-no-brasil"
+                                        target="_blank">Quadro Geral de Regime de Vistos para entrada de estrangeiros no
+                                        Brasil — Ministério das Relações Exteriores</a></p>
+                            </div>
+                </div>
+            </section>
+
+            <section class="outro">
+
+                <!-- favoritar -->
+                <!-- atualizar com backend para exigir estar logado -->
+                <!-- <div class="favoritar">
+                   <i class='bx bx-heart' id="img-favoritar" onclick="favoritar()"></i>
+                   <h3 id="texto-favoritar">FAVORITAR</h3>
+               </div> -->
+
+                <!-- avaliar -->
+                <!-- atualizar com backend para exigir estar logado -->
+                <div class="avaliar">
+                    <span>
+                        <h3>AVALIAR</h3>
+                    </span>
+                    <ul class="estrelas-avaliar">
+                        <li class="estrela" data-value="1"><i class='bx bx-star' id="img-avaliar"></i></li>
+                        <li class="estrela" data-value="2"><i class='bx bx-star' id="img-avaliar"></i></li>
+                        <li class="estrela" data-value="3"><i class='bx bx-star' id="img-avaliar"></i></li>
+                        <li class="estrela" data-value="4"><i class='bx bx-star' id="img-avaliar"></i></li>
+                        <li class="estrela" data-value="5"><i class='bx bx-star' id="img-avaliar"></i></li>
+                    </ul>
+                    <a href="#">e comentar </a>
+                    <!-- atualizar com caixinha que abre por cima -->
+                </div>
+
+                <!-- ver avaliações -->
+                <div class="ver-avaliacoes">
+                    <a href="/travly-front/pages/country-page/brazil/reviews-brazil/reviewsbrazil.html">Ver
+                        avaliações</a>
+                </div>
+
+                <!-- mapa -->
+                <div class="mapa">
+                    <div style="width: 100%"><iframe class="map" width="100%" height="240" frameborder="0"
+                            scrolling="no" marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=brazil+(Brasil)&amp;t=&amp;z=3&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                href="https://www.gps.ie/">gps trackers</a></iframe></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- código javascript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

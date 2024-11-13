@@ -1,0 +1,410 @@
+*{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ambas são sans-serif */
+@font-face {
+    font-family: 'bebas';
+    src: url('BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Ambas são sans-serif */
+@font-face {
+    font-family: 'league';
+    src:  url('LeagueSpartan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --dark_purple: #523A76;
+    --purple: #9775C9;
+    --light_purple: #CEADFF;
+    --soft_pink: #E0CCFF;
+    --white: #FFFFFF;
+    --gray: #565B69;
+    --outro_gray: #303741;
+    --medium_gray: #25292F;
+    --dark: #14181C;
+
+    --text: 'league', sans-serif;
+    --title: 'bebas', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    background-color: #14181C;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 40px;
+}
+
+.img-logo {
+    width: 60px;
+}
+
+.navbar h1 {
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.user {
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    width: 190px;
+    justify-content: center;
+    height: 30px;
+    background-color: #9775C9;
+    border: 0;
+    margin-right: 20px;
+}
+
+.user-icon {
+    width: 20px;
+    padding-right: 10px;
+
+}
+
+.barra-pesquisar {
+    width: 500px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #565B69;
+    color: aliceblue;
+    border: 0;
+    padding-left: 10px; /* adiciona um pouco de padding à esquerda para não ficar muito próximo da borda */
+}
+
+.btn-buscar {
+    width: 20px;
+    height: 20px;
+    background: url('/travly-html-css-branch-de-emergencia-urgente/travly-front/IMG/lupa.png') no-repeat center center;
+    background-size: contain; /* ajusta o tamanho da imagem para caber dentro do botão */
+    border: none;
+    cursor: pointer;
+    position: absolute; /* remove o posicionamento relativo e ajuste conforme necessário */
+    right: 10px; /* ajusta o posicionamento dentro do input */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+input::placeholder {
+    color: #ffffff83;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+body{
+    background: #25292f1e url(Fundo.png) center top no-repeat fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+
+}
+
+.background {
+    display: flex;
+    background-color: #25292F;
+    margin-top: 250px;
+    width: auto;
+}
+
+main {
+    box-shadow: 0px 0px 10px #14181c69;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/* MENU ESQUERDA */
+
+.menu {
+    padding-left: 70px;
+}
+
+.bandeira{
+    width: 300px;
+    border: 20px solid var(--medium_gray);
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px #14181c69;
+}
+
+.bloco-bandeira {
+    margin-top: -190px;
+}
+
+h1{
+    font-size: 90px;
+    color: var(--white);
+    font-family: var(--title);
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+
+.curtidas {
+    background-color: #565B69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    width: 150px;
+    margin: 20px;
+}
+
+.curtidas p {
+    font-family: var(--text);
+    color: white;
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+#img-favoritos {
+    font-size: 40px;
+    color: var(--purple);
+}
+
+#img-curtidas {
+    font-size: 40px;
+    color: #FFD484;
+}
+
+.menuzinho {
+    background-color: var(--gray);
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 25px;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.menuzinho li {
+    font-family: var(--title);
+    font-size: 37px;
+    color: var(--white);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+#selected {
+    color: var(--light_purple);
+}
+
+.menuzinho hr {
+    width: 100%;
+    border: 1px solid #76777a;
+    margin: 10px 0px;
+}
+
+/* CONTEUDO MEIO */
+
+.conteudo {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+.caixa-conteudo {
+    background-color: var(--gray);
+    width: 55%;
+    border-radius: 25px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    
+}
+.texto-ops{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    font-size: 24px;
+    font-family: "league",sans-serif;
+    color: #ffffff49;
+    width: 400px;
+}
+
+th {
+    border-bottom: 1px solid #d8d8da;
+    font-weight: 400;
+    width: 45%;
+}
+
+td {
+    border-bottom: 1px solid #d8d8da;
+}
+
+.last {
+    border-bottom: none;
+}
+
+#tabela-infos2 {
+    height: 150px;
+}
+
+.numeros {
+    background-color: var(--outro_gray);
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 20px;
+    line-height: 25px;
+    width: 38%;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #14181c69;
+}
+
+h4 {
+    color: var(--light_purple);
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.numeros div {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 30px;
+}
+
+.numeros i {
+    font-size: 60px;
+}
+
+.moeda {
+    background-color: var(--outro_gray);
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 20px;
+    line-height: 25px;
+    width: 38%;
+    height: 150px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #14181c69;
+    margin-top: -40px;
+}
+
+.conteudo hr {
+    width: 100%;
+    border: 1px solid #9c9da0;
+    margin: 20px 0px;
+}
+
+.main-conteudo h1 { 
+    background-color: var(--purple);
+    font-size: 40px;
+    width: 99%;
+    border-radius: 100px;
+    margin: -25px 0px 20px 0px;
+}
+
+.main-conteudo p {
+    color: var(--white);
+    padding: 10px;
+    font-family: var(--text);
+    font-size: 24px;
+}
+
+/* MENU DIREITA */
+
+.favoritar {
+    background-color: var(--gray);
+    display: flex;
+    padding: 15px 20px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 230px;
+}
+
+#img-favoritar {
+    font-size: 50px;
+    color: var(--white);
+}
+
+.outro h3 {
+    color: var(--white);
+    font-family: var(--title);
+    font-weight: 200;
+
+    font-size: 35px;
+}
+
+.avaliar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    border-radius: 25px;
+    text-align: center;
+    gap: 10px;
+    width: 230px;
+    margin-top: 20px;
+    padding: 0px 20px 25px 20px;
+}
+
+span {
+    background-color: var(--purple);
+    width: 230px;
+    border-radius: 25px 25px 0px 0px;
+    margin: 0px -20px 7px -20px;
+    padding: 5px 20px;
+
+}
+
+.estrelas-avaliar li {
+    display: inline;
+    font-size: 42px;
+    margin: 0px -3px;
+    color: var(--white);
+}
+
+a {
+    color: var(--soft_pink);
+    font-family: var(--text);
+    font-size: 20px;
+}
+
+.ver-avaliacoes {
+    background-color: var(--gray);
+    width: 230px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.ver-avaliacoes a {
+    text-decoration: none;
+}
